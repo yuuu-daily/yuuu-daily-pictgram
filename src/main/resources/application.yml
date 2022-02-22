@@ -2,7 +2,7 @@ spring:
 
   mvc:
     hiddenmethod:
-    filter:
+      filter:
         enabled: true
 
   servlet:
@@ -10,6 +10,6 @@ spring:
       max-file-size: 20MB
       max-request-size: 20MB
       
-  image:
-    local: true
+image:
+  local: true
   
