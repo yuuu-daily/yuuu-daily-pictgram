@@ -7,7 +7,15 @@ spring:
   h2:
     console:
       enabled: true
-  debug: true
+  security:
+     oauth2:
+       client:
+         registration:
+           google:
+             client-id: ${google.client.id}
+             client-secret: ${google.client.secret}
+             
+debug: true
   
 image:
   local: false

@@ -25,6 +25,14 @@ spring:
   thymeleaf:
     check-template-location: false
  
+  security:
+     oauth2:
+       client:
+         registration:
+           google:
+             client-id: ${google.client.id}
+             client-secret: ${google.client.secret}
+             
 cloud:
   aws:
     stack:
@@ -38,5 +46,6 @@ onesignal:
 
 googlemap:
   key: ${googlemap.key}
+
 
  
